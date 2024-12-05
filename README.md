@@ -3,8 +3,8 @@
 Welcome to the Kubernetes Basics Workshop! This repository contains all materials, exercises, and resources you'll need to get started.
 
 ## Workshop Outline
-1. **Introduction to Kubernetes**
-2. **Setting up Minikube (already installed)**
+1. **Starting up Minikube (already installed)**
+2. **Introduction to kubectl**
 3. **Working with Kubernetes objects (Pods, Deployments, Services)**
 4. **Advanced Configurations (ConfigMaps, Secrets)**
 5. **Final Project: Deploying a Multi-container Application**
