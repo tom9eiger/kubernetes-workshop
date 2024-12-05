@@ -1,5 +1,3 @@
-Here's a concise **README** to help participants start Minikube with a 3-node cluster and get familiar with the Minikube CLI:
-
 ---
 
 # **Minikube Setup for Kubernetes Exercises**

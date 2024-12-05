@@ -1,7 +1,3 @@
-Here’s a concise **Markdown file** for creating a Pod, analyzing it, exposing it as a service, and accessing it via NodePort using Minikube:
-
----
-
 # **Create, Analyze, and Expose a Pod in Kubernetes**
 
 This guide demonstrates how to start a Pod, analyze its state with `kubectl`, expose it as a service, and access it via NodePort using Minikube.
@@ -17,6 +13,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: nginx-pod
+  labels:
+    app: nginx
 spec:
   containers:
   - name: nginx
@@ -90,3 +88,4 @@ Delete the Pod and Service when done:
 kubectl delete pod nginx-pod
 kubectl delete service nginx-pod
 ```
+

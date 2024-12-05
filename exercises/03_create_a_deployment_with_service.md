@@ -1,7 +1,3 @@
-Here’s the complete **Markdown file** for creating a Deployment along with a NodePort Service:
-
----
-
 # **Create a Deployment and Expose it with a NodePort Service**
 
 This guide explains how to deploy an application using a Deployment and expose it for external access using a NodePort Service.
