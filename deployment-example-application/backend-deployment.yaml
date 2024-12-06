@@ -4,7 +4,7 @@ metadata:
   name: flask-api
   namespace: workshop-basic-app
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: flask-api
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: flask-api
-        image: ghcr.io/tom9eiger/backend-demo:latest
+        image: ghcr.io/tom9eiger/example-application/backend-demo:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 80

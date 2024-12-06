@@ -68,7 +68,7 @@ spec:
               fieldPath: metadata.name
         volumeMounts:
         - name: config-volume
-          mountPath: /usr/share/nginx/html
+          mountPath: /usr/share/nginx/html/index.html
           subPath: index.html
       volumes:
       - name: config-volume

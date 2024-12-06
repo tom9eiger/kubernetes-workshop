@@ -1,11 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: frontend-service
-  namespace: workshop-basic-app
+  name: nginx-service
 spec:
   selector:
-    app: frontend
+    app: nginx
   ports:
     - protocol: TCP
       port: 80
