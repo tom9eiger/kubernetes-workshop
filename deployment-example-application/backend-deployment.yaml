@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: flask-api
-  namespace: demo-cni-app
+  namespace: workshop-basic-app
 spec:
   replicas: 1
   selector:

@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend
-  namespace: demo-cni-app
+  namespace: workshop-basic-app
 spec:
   replicas: 1
   selector:
@@ -17,5 +17,8 @@ spec:
       - name: frontend
         image: ghcr.io/tom9eiger/frontend-demo:latest
         imagePullPolicy: Always
+        env:
+          - name: BACKEND_URL
+            value: "http://flask-api-service.demo-cni-app.svc.cluster.local"
         ports:
         - containerPort: 80

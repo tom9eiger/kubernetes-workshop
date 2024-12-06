@@ -1,4 +1,4 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: demo-cni-app
+  name: workshop-basic-app
