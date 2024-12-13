@@ -97,7 +97,7 @@ This workshop guides you through creating **dev** and **prod** namespaces in Kub
    spec:
      containers:
      - name: busybox
-       image: busybox
+       image: ghcr.io/containerd/busybox:1.36
        command: ["sleep", "3600"]
    ```
 
@@ -171,7 +171,7 @@ This workshop guides you through creating **dev** and **prod** namespaces in Kub
    spec:
      containers:
      - name: busybox
-       image: busybox
+       image: ghcr.io/containerd/busybox:1.36
        command: ["sleep", "3600"]
    ```
 
