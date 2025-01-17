@@ -24,19 +24,6 @@ This workshop demonstrates the use of **PersistentVolumes (PVs)** and **Persiste
 **pv-rwo.yaml**:
 ```yaml
 apiVersion: v1
-kind: PersistentVolume
-metadata:
-  name: pv-rwo
-spec:
-  capacity:
-    storage: 1Gi
-  accessModes:
-    - ReadWriteOnce
-  persistentVolumeReclaimPolicy: Retain
-  hostPath:
-    path: /data/rwo
----
-apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: pvc-rwo
@@ -46,7 +33,6 @@ spec:
   resources:
     requests:
       storage: 1Gi
-  volumeName: pv-rwo
 ```
 
 Apply the manifest:
