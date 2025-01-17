@@ -1,7 +1,3 @@
-Here's the updated **README.md** that includes **PersistentVolume (PV)** and **PersistentVolumeClaim (PVC)** for both **ReadWriteOnce (RWO)** and **ReadWriteMany (RWX)** access modes:
-
----
-
 # **Kubernetes Storage Workshop: RWO and RWX with PV and PVC**
 
 This workshop demonstrates the use of **PersistentVolumes (PVs)** and **PersistentVolumeClaims (PVCs)** in Kubernetes with **ReadWriteOnce (RWO)** and **ReadWriteMany (RWX)** access modes. Minikube's default storage provisioner is used for dynamic volume provisioning.
@@ -12,7 +8,7 @@ This workshop demonstrates the use of **PersistentVolumes (PVs)** and **Persiste
 
 - **Minikube** is installed and running:
   ```bash
-  minikube start
+  minikube start 
   ```
 - Enable the default storage provisioner:
   ```bash
@@ -216,7 +212,7 @@ spec:
     image: busybox
     command: ["sleep", "3600"]
     volumeMounts:
-    - mountPath: "/shared-data"
+    - mountPath: "/data"
       name: shared-storage
   volumes:
   - name: shared-storage
@@ -236,7 +232,7 @@ spec:
     image: busybox
     command: ["sleep", "3600"]
     volumeMounts:
-    - mountPath: "/shared-data"
+    - mountPath: "/data"
       name: shared-storage
   volumes:
   - name: shared-storage
@@ -302,7 +298,3 @@ kubectl delete pv pv-rwo pv-rwx
 - **RWO (ReadWriteOnce):** Allows one Pod to mount the volume at a time.
 - **RWX (ReadWriteMany):** Allows multiple Pods to share the same volume.
 - Minikube’s **hostPath** simplifies testing PVs and PVCs locally.
-
----
-
-Would you like this packaged into a repository or included in a presentation? 😊

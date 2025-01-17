@@ -30,7 +30,7 @@ Welcome to the Kubernetes Basics Workshop! This repository contains all material
 
 ### Day 3
 1. **[Working wiht Storage](https://github.com/tom9eiger/kubernetes-workshop/blob/main/exercises/Day-3/01_storage.md)**
-
+2. **[Working Deployment Methods](https://github.com/tom9eiger/kubernetes-workshop/blob/main/exercises/Day-3/02_deployment_methods.md)**
 
 ## Resources
 - Official [Kubernetes Documentation](https://kubernetes.io/docs/)
