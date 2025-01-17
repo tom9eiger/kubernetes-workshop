@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: pod1-rwo
+  name: pod1-rwx
 spec:
   containers:
   - name: busybox
@@ -9,8 +9,8 @@ spec:
     command: ["sleep", "3600"]
     volumeMounts:
     - mountPath: "/data"
-      name: storage
+      name: shared-storage
   volumes:
-  - name: storage
+  - name: shared-storage
     persistentVolumeClaim:
-      claimName: pvc-rwo
+      claimName: pvc-rwx
