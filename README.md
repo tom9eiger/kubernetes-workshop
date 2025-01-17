@@ -29,7 +29,7 @@ Welcome to the Kubernetes Basics Workshop! This repository contains all material
 3. **[Working with Network](https://github.com/tom9eiger/kubernetes-workshop/blob/main/exercises/Day-2/03_Network.md)**
 
 ### Day 3
-1. **[Working wiht Storage](https://github.com/tom9eiger/kubernetes-workshop/blob/main/exercises/Day-2/01_Namespace.md)**
+1. **[Working wiht Storage](https://github.com/tom9eiger/kubernetes-workshop/blob/main/exercises/Day-3/01_storage.md)**
 
 
 ## Resources
