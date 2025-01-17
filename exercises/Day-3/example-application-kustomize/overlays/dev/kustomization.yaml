@@ -1,0 +1,6 @@
+resources:
+  - ../../base
+  - app-namespace.yaml
+
+patches:
+  - path: patches.yaml
